@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Edit User</h2>
+    <form action="{{ url_for('edit', user_id=user.id) }}" method="POST">
+        NAME: <input type="text" name="name" value="{{ user.name }}"><br>
+        EMAIL: <input type="text" name="email" value="{{ user.email }}"><br>
+        PASSWORD: <input type="text" name="password" value="{{ user.password }}"><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
