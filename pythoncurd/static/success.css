@@ -1,0 +1,93 @@
+/* Styling for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+/* Container to center everything */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limit the width of the container */
+}
+
+/* Styling for user data container */
+.user-data-container {
+    margin-top: 30px;
+}
+
+/* Styling for each user box */
+.user-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    flex: 1;
+    text-align: left;
+}
+
+.user-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for Edit button */
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+/* Styling for Delete button */
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
