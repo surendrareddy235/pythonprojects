@@ -65,7 +65,11 @@ def delete(user_id):
     db.session.commit()
     return redirect("/success")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     with app.app_context():
-        db.create_all()  # Create tables if they don't exist
-    app.run(debug=True)
+        db.create_all()
+    app.run(debug=True)   # only for local testing
+else:
+    # When IIS imports your app via wfastcgi, ensure DB tables are created
+    with app.app_context():
+        db.create_all()
